@@ -1,0 +1,152 @@
+ /* General Reset */
+ body,
+ h1,
+ h2,
+ h3,
+ p,
+ ul,
+ li,
+ a {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Body and Font */
+ body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+     color: black;
+     background-color: #f9f9f9;
+     padding: 0;
+     margin: 0;
+ }
+
+ /* Header Styling */
+ /* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; 
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.navbar-logo .logo {
+    height: 50px; 
+}
+
+.navbar-logo .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f9d423; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f9d423;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+ /* About Section */
+ .about {
+     padding: 2rem;
+     background: white;
+ }
+
+ .about-container {
+     max-width: 800px;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .about-container h2 {
+     font-size: 2rem;
+     color: #fb5748;
+     margin-bottom: 1rem;
+ }
+
+ .about-container p {
+     margin: 1rem 0;
+     font-size: 1.1rem;
+     color: black;
+ }
+
+ .about-features {
+     margin: 2rem 0;
+ }
+
+ .about-features h3 {
+     font-size: 1.5rem;
+     margin-bottom: 1rem;
+     color: #fb5748;
+ }
+
+ .about-features ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ .about-features li {
+     margin: 0.5rem 0;
+     font-size: 1.1rem;
+     display: flex;
+     align-items: center;
+ }
+
+ .about-features li i {
+     color: #fb5748;
+     margin-right: 0.5rem;
+ }
+
+ /* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+footer span {
+    color: red; 
+}
